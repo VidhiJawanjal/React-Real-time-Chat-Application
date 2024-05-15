@@ -1,0 +1,76 @@
+.chatList {
+  flex: 1;
+  overflow-y: auto;
+
+  .search {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  .searhBar {
+    display: flex;
+    flex: 1;
+    background-color: rgba(17, 25, 40, 0.5);
+    align-items: center;
+    padding: 0 20px;
+
+    border-radius: 10px;
+  }
+  input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 18px;
+    flex: 1;
+    height: 9px;
+    /* border: 1px solid white; */
+  }
+  .add {
+    background-color: rgba(17, 25, 40, 0.5);
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+
+  .item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.29);
+  }
+
+  img {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    object-fit: contain;
+  }
+  .text{
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+
+   span{
+      font-weight: 500;
+   }
+   p{
+      font-size: 14px;
+      font-weight: 300;
+   }
+  }
+}
+
+.chatList::-webkit-scrollbar {
+  width: 5px;
+}
+.chatList::-webkit-scrollbar-track {
+  background: transparent; /* color of the tracking area */
+}
+.chatList::-webkit-scrollbar-thumb {
+  background-color: black; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+}
