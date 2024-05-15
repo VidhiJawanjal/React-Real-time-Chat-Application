@@ -27,7 +27,6 @@ const ChatList = () => {
         <div className="texts">
           <span>Shivam Ranghe</span>
           <p>Lorem ipsum dolor sit amet.</p>
-          <p></p>
         </div>
       </div>
       <div className="item">

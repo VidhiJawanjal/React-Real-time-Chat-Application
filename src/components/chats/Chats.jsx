@@ -3,14 +3,14 @@ import "./chats.css";
 import EmojiPicker from "emoji-picker-react";
 
 const Chats = () => {
-  const [open, setOpen] = useState(false)
-  const [text, setText] = useState(false)
+  const [open, setOpen] = useState(false);
+  const [text, setText] = useState(false);
 
-  const handleEmoji = (e) =>{
-console.log(e);
-setText((prev) => prev + e.emoji)
-setOpen(false)
-  }
+  const handleEmoji = (e) => {
+    console.log(e);
+    setText((prev) => prev + e.emoji);
+    setOpen(false);
+  };
 
   return (
     <div className="chats">
@@ -41,10 +41,22 @@ setOpen(false)
           <i className="fa-solid fa-camera"></i>
           <i className="fa-solid fa-microphone"></i>
         </div>
-        <input type="text" value={text} placeholder="Typ a message..." onChange={e=>setText(e.target.value)} name="" id="" />
+        <input
+          type="text"
+          value={text}
+          placeholder="Typ a message..."
+          onChange={(e) => setText(e.target.value)}
+          name=""
+          id=""
+        />
         <div className="emoji">
-          <i onClick={()=>setOpen(prev=>!prev)}  className="fa-solid fa-face-grin"></i>
-          <EmojiPicker open={open} onEmojiClick={handleEmoji}/>
+          <i
+            onClick={() => setOpen((prev) => !prev)}
+            className="fa-solid fa-face-grin"
+          ></i>
+          <div className="picker">
+          <EmojiPicker open={open} onEmojiClick={handleEmoji} />
+          </div>
         </div>
         <button className="sendbutton">send</button>
       </div>
@@ -53,3 +65,4 @@ setOpen(false)
 };
 
 export default Chats;
+ 
