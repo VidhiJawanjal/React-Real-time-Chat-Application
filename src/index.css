@@ -19,17 +19,19 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  /* height: 100vh; */
   color: var(--white-color);
   /* background-repeat: no-repeat; */
+  overflow: hidden;
 }
 
 .conatiner{
-  width: 90vw;
-  height: 90vh;
+  height: 100vh;
+  width: 100vw;
   background-color: var(--transperent);
-  border-radius: 12px;
+  /* border-radius: 12px; */
+  border: none;
   backdrop-filter: blur(19px) saturate(180%);
-  border: 1px solid rgba(255, 255, 255, 0.126);
+  /* border: 1px solid rgba(255, 255, 255, 0.126); */
   display: flex;
 }

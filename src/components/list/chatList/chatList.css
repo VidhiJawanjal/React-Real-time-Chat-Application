@@ -2,6 +2,7 @@
   flex: 1;
   overflow-y: auto;
 
+
   .search {
     display: flex;
     align-items: center;
@@ -29,7 +30,12 @@
   }
   .add {
     background-color: rgba(17, 25, 40, 0.5);
-    padding: 10px;
+    height: 30px;
+    width: 30px;
+    /* border: 1px solid; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
     border-radius: 10px;
   }
@@ -64,6 +70,9 @@
   }
 }
 
+
+
+/* scroll bar  */
 .chatList::-webkit-scrollbar {
   width: 5px;
 }
